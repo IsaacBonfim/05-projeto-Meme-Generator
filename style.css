@@ -62,6 +62,7 @@ p {
 
 #meme-image-container {
   position: relative;
+  background-color: white;
   border: 1px solid black;
   width: 400px;
   height: 400px;
@@ -72,6 +73,8 @@ p {
   z-index: 2;
   bottom: 0;
   padding: 5px 10px;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 #meme-image {
