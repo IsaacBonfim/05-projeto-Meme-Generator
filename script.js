@@ -8,3 +8,14 @@ function addTexto() {
 }
 
 textoDigitado.addEventListener('keyup', addTexto);
+
+const imagem = document.getElementById('meme-image');
+const carregaImagem = document.getElementById('meme-insert');
+
+function carregaMeme(evento) {
+  const meme = evento.target.files[0];
+
+  imagem.src = URL.createObjectURL(meme);
+}
+
+carregaImagem.addEventListener('change', carregaMeme);
